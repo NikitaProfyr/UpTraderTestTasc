@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MainMenu</title>
+</head>
+<body>
+    <h2>welcome to the project for UpTrader!</h2>
+    {% block menu %}
+        {% for item in menu_items %}
+            <a href="{% url 'MenuItemDetailView' id_item=item.pk %}">{{ item.title }}</a>
+        {% endfor %}
+    {% endblock %}
+</body>
+</html>
