@@ -4,8 +4,14 @@
 
 ### Далее введите следующие команды:
 
-- pip install requirements.txt
+- pip install -r requirements.txt
 - python manage.py migrate
   
 ### Для работы под админом введите следующие команды:
 - python manege.py createsuperuser
+- введите в консоль наименование администратора
+- введите в консоль email администратора(необязательно)
+- введите в консоль пароль
+- повторите пароль пароль
+
+### Для запуска проекта введите python manage.py runserver и перейдите по адресу http://127.0.0.1:8000/menu/main/:
