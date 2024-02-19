@@ -10,7 +10,7 @@ def get_all_menu_item() -> QuerySet:
 
 def get_related_sub_menu_items(id_item: int) -> QuerySet:
     """Получить все элементы под меню, конкретного элемента меню"""
-    return SubMenuItem.objects.select_related('menu_item').filter(menu_item=id_item)
+    return SubMenuItem.objects.filter(menu_item=id_item)
 
 
 def get_current_sub_menu_item(id_item: int) -> QuerySet:
